@@ -10,8 +10,8 @@ func NewUser(name string) *User {
 	return &User{name: name}
 }
 
-func (u *User) Read() {
-	fmt.Printf("%s is reading...", u.name)
+func (u *User) Read(book string) {
+	fmt.Printf("User:%s is reading Book:%s", u.name, book)
 }
 
 func (u *User) Run() error {
