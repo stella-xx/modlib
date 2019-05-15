@@ -14,8 +14,10 @@ func (u *User) Read() {
 	fmt.Printf("%s is reading...", u.name)
 }
 
-func (u *User) Run() {
+func (u *User) Run() error {
 	fmt.Printf("%s is running...", u.name)
+
+	return nil
 }
 
 type Reader interface {
